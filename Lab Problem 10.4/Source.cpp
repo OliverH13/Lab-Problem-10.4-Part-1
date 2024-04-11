@@ -9,7 +9,6 @@ int main() {
     int input;
 
     while (true) {
-
         cout << "Enter 8-digit card # or Q to quit: ";
         cin >> input;
 
@@ -44,6 +43,7 @@ int credit_card_check(int value) {
         even_digits = even_digits / 10;
         odd_digits = even_digits % 10;
         odd_digits *= 2;
+       
         if (odd_digits >= 10) {
             digi_one = odd_digits % 10;
             digi_two = odd_digits / 10;
